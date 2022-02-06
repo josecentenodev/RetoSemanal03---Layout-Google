@@ -29,7 +29,7 @@ body, input, button {
 .botonera {
     display: flex;
     box-sizing: border-box;
-    width: 250px;
+    width: 235px;
     justify-content: space-evenly;
     align-items: center;
     padding: 10px 4px;
@@ -70,8 +70,8 @@ body, input, button {
 }
 
 .botonImg img {
-    width: 38px;
-    height: 38px;
+    width: 32px;
+    height: 32px;
     border-radius: 50%;
     align-self: center;
     }
@@ -84,8 +84,18 @@ body, input, button {
     box-shadow: 0 0 0 4px rgba(60,64,67,0.08);
 }
 
+.botonApps svg {
+    width: 30px;
+    height: 30px;
+}
+
+.botonApps svg:hover {
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px rgba(60,64,67,0.08);
+}
+
 .container {
-    margin-top: 20vh;
+    margin-top: 18vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -103,7 +113,7 @@ body, input, button {
 
 .buscador {
     height: 50px;
-    width: 600px;
+    width: 610px;
     box-sizing: border-box;
     border-radius: 24px;
     border: 1px solid #dfe1e5;
@@ -157,6 +167,11 @@ input {
     user-select: none;
 }
 
+input[type=submit]:hover {
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+    border: 1px solid #dadce0;
+}
+
 .buscador:hover {
     background-color: #fff;
     box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
@@ -178,6 +193,10 @@ input {
     text-decoration: none;
 }
 
+.ofrecido a:hover {
+    text-decoration: underline;
+}
+
 
 /* FOOTER */
 
@@ -186,7 +205,7 @@ input {
 }
 
 .footer p {
-    padding: 15px 30px;
+    padding: 5px 30px 15px 30px;
     border-bottom: 1px solid #dadce0;
     font-size: 15px;
     color: #70757a;
@@ -194,7 +213,6 @@ input {
 
 .abajo {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     padding: 0 20px 20px 20px;
     align-items: center;
